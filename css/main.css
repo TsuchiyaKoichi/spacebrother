@@ -35,7 +35,7 @@ body {
 
 .tile1-anime {
   transform: translateX(0);
-  animation: anime-tile1 .3s linear;
+  animation: anime-tile1 .5s linear;
 }
 
 @keyframes anime-tile1{
@@ -52,7 +52,7 @@ body {
 
 .tile2-anime {
   transform: translateX(0);
-  animation: anime-title2 .3s linear;
+  animation: anime-title2 .5s linear;
 }
 
 @keyframes anime-title2{
@@ -70,7 +70,7 @@ body {
 
 .tile3-anime {
   transform: translate(-60px, -40px) rotate(10deg) scaleY(1.2);
-  animation: anime-tile3 .3s linear;
+  animation: anime-tile3 .5s linear;
 }
 
 @keyframes anime-tile3{
@@ -89,7 +89,7 @@ body {
 .tile4-anime {
   transform: translateY(-30px) scale(1.0);
   opacity: 1;
-  animation: anime-tile4 .3s linear;
+  animation: anime-tile4 .5s linear;
 }
 
 @keyframes anime-tile4{
