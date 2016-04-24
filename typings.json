@@ -1,0 +1,11 @@
+{
+  "name": "paralax",
+  "version": false,
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "registry:npm/gulp#3.8.0+20160211003958"
+  },
+  "ambientDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236"
+  }
+}
