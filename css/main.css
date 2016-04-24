@@ -1,27 +1,141 @@
-@charset "UTF-8";
 body, div, p, span, section, aside, nav, footer, h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: url('../images/backscreen.jpg') fixed;
+  background-size: cover;
+}
 
 body {
   margin: 0;
   padding: 0;
+  font: 24px/1.5 'Open Sans', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Meiryo,'メイリオ','ＭＳ Ｐゴシック',Helvetica,Arial, sans-serif;
+}
+
+.main-role {
   width: 100%;
-  height: 6000px;
-  font: 24px/1.5 'Open Sans', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Meiryo,'メイリオ','ＭＳ Ｐゴシック',Helvetica,Arial, sans-serif; }
+  background: transparent;
+}
 
 .tile {
   width: 100%;
-  height: 500px; }
+  height: 450px;
+}
+
+.title {
+  width: 100%;
+  height: 500px;
+  background: transparent;
+}
 
 .tile1 {
-  background: #FF0000; }
+  background: #0000cd;
+  transform: translateX(-100%);
+}
+
+.tile1-anime {
+  transform: translateX(0);
+  animation: anime-tile1 .3s linear;
+}
+
+@keyframes anime-tile1{
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+
 
 .tile2 {
-  background: #00FF00; }
+  transform: translateX(100%);
+  background: #FF5722;
+}
+
+.tile2-anime {
+  transform: translateX(0);
+  animation: anime-title2 .3s linear;
+}
+
+@keyframes anime-title2{
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+
 
 .tile3 {
-  background: #0000FF; }
+  width: 130%;
+  background: #9C27B0;
+  transform: translateX(-130%) rotate(10deg) scaleY(1.2);
+}
 
-.red {
-  color: #FF3399; }
+.tile3-anime {
+  transform: translate(-60px, -40px) rotate(10deg) scaleY(1.2);
+  animation: anime-tile3 .3s linear;
+}
+
+@keyframes anime-tile3{
+  0%   { transform: translateX(-130%) rotate(10deg) scaleY(1.2); }
+  100% { transform: translate(-60px, -40px) rotate(10deg) scaleY(1.2); }
+}
+
+
+
+.tile4 {
+  background: #FFEB3B;
+  transform: translateY(0) scale(.9);
+  opacity: 0;
+}
+
+.tile4-anime {
+  transform: translateY(-30px) scale(1.0);
+  opacity: 1;
+  animation: anime-tile4 .3s linear;
+}
+
+@keyframes anime-tile4{
+  0%   { transform: translateY(0) scale(.9); opacity: 0; }
+  100% { transform: translateY(-30px) scale(1.0); opacity: 1; }
+}
+
+
+.tile5 {
+  width: 120%;
+  background: #F44336;
+  transform: translate(-120%, -60px) rotate(0) scaleY(1.2);
+}
+
+.tile5-anime {
+  transform: translate(-20px, -60px) rotate(-5deg) scaleY(1.2);
+  animation: anime-tile5 .5s linear;
+}
+
+@keyframes anime-tile5{
+  0%   { transform: translate(-120%, -60px) rotate(0) scaleY(1.2); }
+  70%  { transform: translate(-20px, -60px) rotate(0) scaleY(1.2); }
+  100% { transform: translate(-20px, -60px) rotate(-5deg) scaleY(1.2); }
+}
+
+
+
+
+.tile6 {
+  background: #4CAF50;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+.tile6-anime {
+  transform: translateY(-30px);
+  animation: anime-tile6 .5s linear;
+  opacity: 1;
+}
+
+@keyframes anime-tile6{
+  0%   {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}

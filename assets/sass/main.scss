@@ -23,7 +23,19 @@ body {
 }
 
 .tile2 {
+  width: 0;
   background: #00FF00;
+  transform: rotate(30deg);
+}
+
+.tile2-anime {
+  width: 100%;
+  animation: anime-title2 .3s ease-in;
+}
+
+@keyframes anime-title2{
+  0%   { width: 0; }
+  100% { width: 100%; }
 }
 
 .tile3 {
